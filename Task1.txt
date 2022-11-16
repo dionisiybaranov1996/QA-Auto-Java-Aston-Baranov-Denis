@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws Exception{
+
+        //Составить алгоритм: если введенное число больше 7, то вывести “Привет”
+        int a = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Введите число больше 7 (7 не входит) : ");
+        if (sc.hasNextInt()) {
+            a = sc.nextInt();
+            if(a> 7){
+                System.out.println("Привет");
+            }
+        } else {
+            System.out.println("Извините, вы ввели не число. Перезапустите программу и попробуйте снова!");
+        }
+    }
+}

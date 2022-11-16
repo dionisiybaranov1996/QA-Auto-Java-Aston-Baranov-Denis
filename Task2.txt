@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) throws Exception{
+
+        //Составить алгоритм: если введенное имя совпадает с Вячеслав, то вывести “Привет, Вячеслав”, если нет, то вывести "Нет такого имени"
+        //Работает с учетом регистра, тоесть вячеслав == "Нет такого имени", для поддержки регистра надо приводить к toLowerCase  сравнивать с "вячеслав", однако это в условия задания это не входит
+        Scanner sc = new Scanner(System.in);
+        String name ="" ;
+        System.out.println("Введите Имя  (с учетом Регистра): ");
+        if (sc.hasNext()) {
+            name = sc.next();
+            System.out.println(name);
+        }
+        if (name.equals("Вячеслав")) {
+        System.out.println("Привет, " + name);
+
+        } else {
+            System.out.println("Нет такого имени");
+        }
+    }
+}
